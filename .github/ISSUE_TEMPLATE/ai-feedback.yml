@@ -14,8 +14,7 @@ body:
     attributes:
       label: What kind of feedback is this?
       options:
-        - Request for a new skill
-        - Request for a new tool
+        - Request for a new skill or tool
         - Improve an existing skill or tool
         - An existing skill or tool is not working as expected
         - Not sure
