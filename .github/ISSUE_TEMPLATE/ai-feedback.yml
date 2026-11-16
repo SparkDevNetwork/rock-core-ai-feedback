@@ -33,16 +33,15 @@ body:
   - type: dropdown
     id: where
     attributes:
-      label: Where do you see this?
-      description: Pick where you use the skill or tool.
+      label: If you're having a problem, where does it happen?
+      description: Skip this for new skill or tool requests.
       options:
-        - MCP (Claude, ChatGPT, or another AI client)
-        - Rock's built-in chat
-        - Both
-        - Not applicable (new request)
+        - In an outside AI app connected to Rock through MCP (for example, Claude or ChatGPT)
+        - In the chat inside Rock
+        - In both places
         - Not sure
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: goal
