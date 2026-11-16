@@ -1,0 +1,88 @@
+name: AI Skill or Tool Feedback
+description: Request a new skill or tool, or tell us how to make an existing one better.
+title: "[Feedback]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us shape Rock's core AI skills and tools. Keep it high level. We would rather hear the idea than have it perfectly written.
+
+        **This repo is public.** Remove names, contact details, giving data, and other personal information before you post.
+
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: What kind of feedback is this?
+      options:
+        - Request for a new skill
+        - Request for a new tool
+        - Improve an existing skill or tool
+        - An existing skill or tool is not working as expected
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: existing-skill-or-tool
+    attributes:
+      label: Which skill or tool?
+      description: If this is about an existing skill or tool, name it here. Leave blank for new requests.
+      placeholder: "Example: GroupSkill / ListGroupMembers"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where do you see this?
+      description: Pick where you use the skill or tool.
+      options:
+        - MCP (Claude, ChatGPT, or another AI client)
+        - Rock's built-in chat
+        - Both
+        - Not applicable (new request)
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+      description: Describe the ministry or admin task. What can't you do today?
+      placeholder: "Example: I want to ask which first-time guests have not been contacted yet this month."
+    validations:
+      required: true
+
+  - type: textarea
+    id: results
+    attributes:
+      label: What results are you getting?
+      description: Tell us what happens now. Include the prompt and the AI's response if you can.
+      placeholder: "Example: The AI says it can't filter connection requests by status, so it lists all of them."
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What would a good result look like?
+      description: Tell us what you hoped would happen.
+    validations:
+      required: false
+
+  - type: input
+    id: rock-version
+    attributes:
+      label: Rock version
+      placeholder: "Example: 18.2"
+    validations:
+      required: false
+
+  - type: textarea
+    id: other
+    attributes:
+      label: Anything else?
+      description: Screenshots, links, or other context that helps.
+    validations:
+      required: false

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Bug in Rock (not AI related)
+    url: https://github.com/SparkDevNetwork/Rock/issues
+    about: Report bugs in Rock outside of the AI skills and tools as a core issue.
+  - name: General feature request
+    url: https://community.rockrms.com/ideas
+    about: Post feature ideas that are not about AI on the Rock Idea Board.
+  - name: Security vulnerability
+    url: https://security.rockrms.com/
+    about: Report security issues privately through Talos. Do not post them here.
